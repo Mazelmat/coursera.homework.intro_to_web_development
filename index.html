@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A short description of my page.">
+    <meta name="author" content="Your Name">
+    <meta name="theme-color" content="#317EFB">
+    <title>my page</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header role="banner">
+        <a class="skip-link" href="#main-content">Skip to content</a>
+        <div class="site-header-inner">
+            <h1 class="site-title">my page</h1>
+            <nav role="navigation" aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+    <section id="about-me" role="region" aria-labelledby="about-heading">
+        <article>
+            <h2 id="about-heading">About Me</h2>
+            <p>This is a short bio.</p>
+        </article>
+    </section>
+
+    <section id="projects" role="region" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <div class="project" id="project-1">
+                <h3>Project 1</h3>
+                <p>Short description of Project 1. What it does and the main technologies used.</p>
+                <img src="images/project1-placeholder.png" alt="Screenshot of Project 1" />
+                <p><a href="#">Live demo / repository</a></p>
+            </div>
+
+            <div class="project" id="project-2">
+                <h3>Project 2</h3>
+                <p>Short description of Project 2. What it does and the main technologies used.</p>
+                <img src="images/project2-placeholder.png" alt="Screenshot of Project 2" />
+                <p><a href="#">Live demo / repository</a></p>
+            </div>
+        </section>
+
+    <section id="skills" role="region" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section id="contact" role="region" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Form</h2>
+            <form action="#" method="post" aria-label="Contact form">
+                <fieldset>
+                    <legend class="visually-hidden">Contact form</legend>
+
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" required aria-required="true">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required aria-required="true">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required aria-required="true"></textarea>
+                    </div>
+
+                </fieldset>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 My Site</p>
+    </footer>
+</body>
+
